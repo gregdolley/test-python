@@ -8,7 +8,11 @@
 # ASCII art, but it can do it while being constrained to only using 11 basic ASCII 
 # characters.
 #
-# TODO: remove this file from the test-python project and put it in its own project.
+# IMPORTANT UPDATE (8/6/2023): this file has been moved to the ascii_art_generator project and
+# is no longer maintained under this test-python project. The code in this source file started
+# as an experiment and consisted of just a couple dozen lines of code. The experiment worked
+# so well that I kept on building on top of it and adding new features. This code is no longer
+# an experiment and requires its own project/repo.
 #---------------------------------------------------------------------------------------------
 import argparse
 import os
@@ -177,7 +181,7 @@ def textfile_to_image(textfile_path):
     draw_text_strings_as_graphical_lines(lines, renderer, max_line_height, font)
 
     return new_image
-    
+
 
 def calc_widest_line_in_pixels(lines, font):
     widest_line = max(lines, key=lambda s: font.getbbox(s)[2])
