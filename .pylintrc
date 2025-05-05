@@ -27,7 +27,7 @@ disable=invalid-name, missing-module-docstring, missing-function-docstring, broa
 [BASIC]
 
 # Good variable names which should always be accepted, separated by a comma
-good-names=i,j,k
+good-names=i,j,k,x,y,z
 
 # Bad variable names which should always be refused, separated by a comma
 bad-names=foo,bar,baz,toto,tutu,tata
